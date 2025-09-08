@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grace Nakiyemba — Software Developer</title>
+	<meta name="description" content="Portfolio of Grace Nakiyemba — Software Developer, Tech Enthusiast, Community Builder.">
+	<!-- Fonts and icons -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	<!-- Styles -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- Early theme application to avoid flash -->
+	<script>
+		(function(){
+			try{
+				const saved = localStorage.getItem('theme'); // 'light' | 'dark' | null
+				if(saved === 'light' || saved === 'dark'){
+					document.documentElement.setAttribute('data-theme', saved);
+				}
+			}catch(e){}
+		})();
+	</script>
+</head>
+<body>
+	<canvas id="bgStars" aria-hidden="true"></canvas>
+	<canvas id="bgSnow" aria-hidden="true"></canvas>
+	<div class="overlay-grad" aria-hidden="true"></div>
+
+	<header>
+		<div class="container nav">
+			<div class="brand">Grace <span>Nakiyemba</span></div>
+			<nav aria-label="Primary">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<button class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+					<i class="fa-solid fa-sun"></i>
+				</button>
+			</nav>
+		</div>
+	</header>
+
+	<main id="home" class="hero">
+		<div class="container grid">
+			<div>
+				<div class="kicker">Software Developer • Tech Enthusiast • Community Builder</div>
+				<h1 class="title">
+					<span class="name">Hi, I'm <span class="accent">Grace</span></span><br>
+					<span class="surname">Nakiyemba</span>
+				</h1>
+				<p class="tagline">A passionate woman in tech building solutions that matter.</p>
+				<p class="roles" aria-live="polite">
+					<span id="roleTyper">Software Developer</span><span class="cursor"></span>
+				</p>
+				<div class="hero-cta">
+					<a href="#projects" class="btn btn-primary">See My Work</a>
+					<a href="#contact" class="btn">Let’s Connect</a>
+				</div>
+				<div class="hero-cta" style="margin-top:14px">
+					<div class="socials" aria-label="Social media">
+						<!-- Replace with your actual profile URLs -->
+						<a href="https://github.com/Grace256c" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/grace-1520a9264" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://x.com/gospelgrace3" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+						<a href="https://instagram.com/gospelgrace256?igsh=MWoJrdjlmdXVtZg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-photo reveal">
+				<img src="IMG-20221220-WA0014.jpg" alt="Professional headshot of Grace Nakiyemba">
+			</div>
+		</div>
+	</main>
+
+	<section id="about">
+		<div class="container grid-2">
+			<div>
+				<h2 class="section-title">About Me</h2>
+				<p class="section-sub">Who I am and what I care about</p>
+				<div class="card reveal">
+					<p>I’m <strong>Grace Nakiyemba</strong> — a software developer and community builder using technology to empower people and solve real problems. I care deeply about building tools that are accessible, scalable, and genuinely useful in everyday life.</p>
+					<p>I enjoy turning ideas into reliable software, collaborating with others to ship impact, and sharing knowledge through mentorship and community work. Whether I’m prototyping a web experience, improving a product, or organizing a local tech initiative, the goal is the same: create meaningful solutions that uplift communities.</p>
+				</div>
+			</div>
+			<div class="card reveal">
+				<ul class="about-list">
+					<li>Location: Kampala, Uganda</li>
+					<li>Focus: Web apps, community-driven projects, mentorship</li>
+					<li>Interests: UX, inclusive design, open-source, education</li>
+					<li>Email: <a href="nakiyembagrace256@gmail.com">nakiyembagrace256@gmail.com</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="projects">
+		<div class="container">
+			<h2 class="section-title">Projects</h2>
+			<p class="section-sub">Real-world work that solves real problems</p>
+			<div class="projects">
+				<article class="card project reveal">
+					<h3>Community Health Finder</h3>
+					<p>A mobile-first web app that helps communities discover nearby clinics and health resources with offline access.</p>
+					<div class="stack">Tech: React, Node.js, IndexedDB, Mapbox</div>
+					<div class="proj-ctas">
+						<a class="btn btn-primary cta" href="#" target="_blank" rel="noopener">Live Demo</a>
+						<a class="btn cta" href="#" target="_blank" rel="noopener">GitHub</a>
+					</div>
+				</article>
+
+				<article class="card project reveal">
+					<h3>SkillsUp Mentorship</h3>
+					<p>A mentorship matching platform connecting learners with local tech mentors and tracking progress.</p>
+					<div class="stack">Tech: Next.js, Supabase, Tailwind</div>
+					<div class="proj-ctas">
+						<a class="btn btn-primary cta" href="#" target="_blank" rel="noopener">Live Demo</a>
+						<a class="btn cta" href="#" target="_blank" rel="noopener">GitHub</a>
+					</div>
+				</article>
+
+				<article class="card project reveal">
+					<h3>MarketLink</h3>
+					<p>Lightweight e-commerce starter for local vendors with mobile money integrations and simple inventory.</p>
+					<div class="stack">Tech: SvelteKit, Node.js, MongoDB</div>
+					<div class="proj-ctas">
+						<a class="btn btn-primary cta" href="#" target="_blank" rel="noopener">Live Demo</a>
+						<a class="btn cta" href="#" target="_blank" rel="noopener">GitHub</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills">
+		<div class="container grid-2">
+			<div>
+				<h2 class="section-title">Skills</h2>
+				<p class="section-sub">Tools I use to build</p>
+				<div class="card reveal">
+					<div class="skill">
+						<div class="label"><span>HTML</span><span>90%</span></div>
+						<div class="bar"><div class="fill" data-pct="90"></div></div>
+					</div>
+					<div class="skill">
+						<div class="label"><span>CSS</span><span>85%</span></div>
+						<div class="bar"><div class="fill" data-pct="85"></div></div>
+					</div>
+					<div class="skill">
+						<div class="label"><span>Figma</span><span>95%</span></div>
+						<div class="bar"><div class="fill" data-pct="95"></div></div>
+					</div>
+					<div class="skill">
+						<div class="label"><span>Node.js</span><span>70%</span></div>
+						<div class="bar"><div class="fill" data-pct="70"></div></div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2 class="section-title">Experience & Achievements</h2>
+				<div class="card reveal">
+					<div class="exp">
+						<div class="exp-item">
+							<div><span class="where">Local Hackathon</span> — Winner, Social Impact Track</div>
+							<div class="when">2025</div>
+						</div>
+						<div class="exp-item">
+							<div><span class="where">Community Tech Bootcamp</span> — Mentor</div>
+							<div class="when">2024–Present</div>
+						</div>
+						<div class="exp-item">
+							<div><span class="where">Open Source</span> — Contributor, documentation and UI fixes</div>
+							<div class="when">Ongoing</div>
+						</div>
+					</div>
+					<p class="note"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container contact">
+			<div>
+				<h2 class="section-title">Let’s collaborate</h2>
+				<p class="section-sub">Build something meaningful together</p>
+				<div class="card reveal">
+					<form action="https://formspree.io/f/your-form-id" method="POST">
+						<div class="form-grid">
+							<label>
+								<span>Name</span>
+								<input type="text" name="name" placeholder="Your name" required>
+							</label>
+							<label>
+								<span>Email</span>
+								<input type="email" name="email" placeholder="you@example.com" required>
+							</label>
+							<label>
+								<span>Message</span>
+								<textarea name="message" placeholder="Tell me about your project..." required></textarea>
+							</label>
+							<button class="btn btn-primary" type="submit">Send Message</button>
+						</div>
+					</form>
+					<p class="note">Or email me at <a href="nakiyembagrace256@gmail.com">nakiyembagrace256@gmail.com</a></p>
+					<div class="socials">
+						<a href="https://github.com/your-github" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://twitter.com/your-twitter" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+						<a href="https://instagram.com/your-instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="card reveal">
+				<h3 style="margin-top:0">What I’m open to</h3>
+				<ul class="about-list">
+					<li>Freelance web development</li>
+					<li>Community partnerships and workshops</li>
+					<li>Mentorship and speaking</li>
+					<li>Open-source collaboration</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">© <span id="year"></span> Grace Nakiyemba. All rights reserved.</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="script.js"></script>
+</body>
+</html>
